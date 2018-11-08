@@ -106,6 +106,7 @@ function uploadImage () {
         showDialog('error', 'Platzipics', 'Verifique su conexión y/o sus credenciales de Cloudup')
       } else {
         clipboard.writeText(stream.url)
+        /* Nos sirve para crear Notificaciones */
         const notify = new Notification('Platzipics', { //eslint-disable-line
           body: `Imagen cargada con éxito - ${stream.url}, el enlace se copio al portapeles ` +
                 `De click para abrir la url`,
