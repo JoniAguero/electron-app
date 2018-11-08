@@ -10,6 +10,9 @@
   "author": "JoniAguero",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^3.0.8"
+    "electron-prebuilt-compile": "^3.0.6"
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.3"
   }
 }
