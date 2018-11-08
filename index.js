@@ -14,6 +14,11 @@ app.on('ready', () => {
         center: true,
         maximizable: false
     });
+    win.on('move', () => {
+        const position = win.getPosition();
+        console.log(`Posicion: ${position}`);
+        
+    })
     win.on('closed', () => {
         win = null;
         app.quit();
