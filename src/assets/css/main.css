@@ -45,6 +45,8 @@
     cursor: progress;
 }
 
+/* CSS que nos sirve para imprimir la imagen sin el sidebar ni los paneles */
+
 @media print {
 
     header,

@@ -92,7 +92,7 @@ function clearImages () {
     oldImages[i].parentNode.removeChild(oldImages[i])
   }
 }
-
+/* Método para imprimir */
 function print () {
   window.print()
 }
