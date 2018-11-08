@@ -1,4 +1,5 @@
 import { remote, ipcRenderer } from 'electron'
+/* Preferencias -> settings */
 import settings from 'electron-settings'
 import crypto from 'crypto'
 

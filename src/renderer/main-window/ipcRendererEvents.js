@@ -1,4 +1,5 @@
 import { ipcRenderer, clipboard, remote, shell } from 'electron'
+/* Preferencias -> settings */
 import settings from 'electron-settings'
 import { addImagesEvents, clearImages, loadImages, selectFisrtImage } from './images-ui'
 import { saveImage } from './filters'
