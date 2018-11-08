@@ -72,6 +72,7 @@ app.on('ready', () => {
     icon = path.join(__dirname, 'assets', 'icons', 'tray-icon.png')
   }
 
+  /* Tray -> para mostrar icono */
   global.tray = new Tray(icon)
   global.tray.setToolTip('Platzipics')
   global.tray.on('click', () => {
