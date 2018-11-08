@@ -1,3 +1,4 @@
+/* `Se refactoriza el codigo, todo los ipcEvents se colocan en este archivo y se sacan de index.js */
 import { ipcMain, dialog } from 'electron'
 import isImage from 'is-image'
 import filesize from 'filesize'

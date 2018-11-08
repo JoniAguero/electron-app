@@ -8,6 +8,7 @@ function relaunchApp (win) {
     title: 'Platzipics',
     message: 'Ocurrió un error inesperado, se reiniciará el aplicativo'
   }, () => {
+    // Reinicia la App
     app.relaunch()
     app.exit(0)
   })
