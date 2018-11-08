@@ -1,10 +1,20 @@
 import url from 'url';
-import path from 'path'
+import path from 'path';
+import applyFilter from './filters';
 
 window.addEventListener('load', () => {
     addImageEvents();
     searchImagesEvent();
+    selectEvent();
 })
+
+function selectEvent() {
+    const select = document.getElementById('filters')
+
+    select.addEventListener('change', function () {
+        applyFilter(this.value, document.getElementById('image-displayed'))
+    })
+}
 
 function addImageEvents() {
     const thumbs = document.querySelectorAll('li.list-group-item');
