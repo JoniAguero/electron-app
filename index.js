@@ -12,13 +12,18 @@ app.on('ready', () => {
         height: 600,
         title: 'My first Electro App',
         center: true,
-        maximizable: false
+        maximizable: false,
+        show: false
     });
-    win.on('move', () => {
-        const position = win.getPosition();
-        console.log(`Posicion: ${position}`);
+    // win.on('move', () => {
+    //     const position = win.getPosition();
+    //     console.log(`Posicion: ${position}`);
         
+    // })
+    win.once('ready-to-show', () => {
+        win.show();
     })
+    win.loadURL('https://devdocs.io/');
     win.on('closed', () => {
         win = null;
         app.quit();
