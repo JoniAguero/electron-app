@@ -1,3 +1,4 @@
+import os from 'os';
 window.addEventListener('load', () => {
-    // document.getElementById('msj').innerHTML = "Mensaje desde JS"
+    console.log(os.cpus());
 })
