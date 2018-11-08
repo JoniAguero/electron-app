@@ -62,3 +62,26 @@ function selectFirstImage() {
     const image = document.querySelector('li.list-group-item:not(.hidden)')
     changeImage(image)
 }
+
+function loadImages(images) {
+    const imagesList = document.querySelector('ul.list-group')
+
+    for (let i = 0, length1 = images.length; i < length1; i++) {
+        const node = `<li class="list-group-item">
+              <img class="media-object pull-left" src="${images[i].src}" height="32">
+              <div class="media-body">
+                <strong>${images[i].filename}</strong>
+                <p>${images[i].size}</p>
+              </div>
+            </li>`
+        imagesList.insertAdjacentHTML('beforeend', node)
+    }
+}
+
+function clearImages() {
+    const oldImages = document.querySelectorAll('li.list-group-item')
+
+    for (let i = 0, length1 = oldImages.length; i < length1; i++) {
+        oldImages[i].parentNode.removeChild(oldImages[i])
+    }
+}
