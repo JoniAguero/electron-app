@@ -46,6 +46,7 @@ function openPreferences () {
     show: false
   })
 
+  /* setParentWindow no funciona en windows */
   if (os.platform() !== 'win32') {
     preferencesWindow.setParentWindow(mainWindow)
   }
