@@ -9,7 +9,7 @@ function createMenu () {
       submenu: [
         {
           label: 'Abrir ubicación',
-          accelerator: 'CmdOrCtrl+O',
+          accelerator: 'CmdOrCtrl+O', // Sirve para crear atajos
           click () { openDirectory() }
         },
         {
