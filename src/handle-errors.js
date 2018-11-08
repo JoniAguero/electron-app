@@ -1,3 +1,5 @@
+// MANEJO DE ERRORRES
+
 import { app, dialog } from 'electron'
 
 function relaunchApp (win) {
