@@ -7,8 +7,8 @@ import path from 'path'
 function setMainIpc (win) {
   ipcMain.on('open-directory', (event) => {
     dialog.showOpenDialog(win, {
-      title: 'Seleccione la nueva ubicaciÃ³n',
-      buttonLabel: 'Abrir ubicaciÃ³n',
+      title: 'Seleccione la nueva ubicación',
+      buttonLabel: 'Abrir ubicación',
       properties: ['openDirectory']
     },
     (dir) => {
