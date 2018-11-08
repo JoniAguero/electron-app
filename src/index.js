@@ -22,6 +22,7 @@ app.on('before-quit', () => {
 
 // Ejecutando ordenes cuando la aplicación esta lista
 app.on('ready', () => {
+  /* protocol -> Registrao un protocolo personalizado para acceder a los recursos */
   protocol.registerFileProtocol('plp', (request, callback) => {
     const url = request.url.substr(6)
     callback({path: path.normalize(url)}) // eslint-disable-line
