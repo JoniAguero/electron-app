@@ -1,11 +1,12 @@
 import url from 'url';
+import path from 'path'
 
 window.addEventListener('load', () => {
     addImageEvents();
     searchImagesEvent();
 })
 
-function addImageEvents () {
+function addImageEvents() {
     const thumbs = document.querySelectorAll('li.list-group-item');
 
     thumbs.forEach(function (element) {
@@ -16,7 +17,7 @@ function addImageEvents () {
 
 }
 
-function changeImage (node) {
+function changeImage(node) {
     document.querySelector('li.selected').classList.remove('selected');
     node.classList.add('selected');
     document.getElementById('image-displayed').src = node.querySelector('img').src;
@@ -38,11 +39,16 @@ function searchImagesEvent() {
                 }
             }
             selectFirstImage()
+        } else {
+            const hidden = document.querySelectorAll('li.hidden')
+            for (let i = 0, length1 = hidden.length; i < length1; i++) {
+                hidden[i].classList.remove('hidden')
+            }
         }
     })
 }
 
-function selectFirstImage () {
+function selectFirstImage() {
     const image = document.querySelector('li.list-group-item:not(.hidden)')
     changeImage(image)
 }
