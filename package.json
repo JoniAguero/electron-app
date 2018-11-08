@@ -4,16 +4,21 @@
   "description": "Electron App",
   "main": "index.js",
   "scripts": {
+    "lint": "standard",
+    "lint-fix": "standard --fix",
     "dev": "cross-env NODE_ENV=DEV && electron index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JoniAguero",
   "license": "MIT",
   "devDependencies": {
-    "electron-prebuilt-compile": "^3.0.6"
+    "devtron": "^1.4.0",
+    "electron-prebuilt-compile": "^3.0.6",
+    "standard": "^12.0.1"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
-    "electron-compile": "^6.4.3"
+    "electron-compile": "^6.4.3",
+    "electron-debug": "^2.0.0"
   }
 }

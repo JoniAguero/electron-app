@@ -35,4 +35,6 @@ app.on('ready', () => {
         win = null;
         app.quit();
     })
+
+    win.toggleDevTools();
 })
