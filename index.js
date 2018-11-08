@@ -22,8 +22,10 @@ app.on('ready', () => {
     // })
     win.once('ready-to-show', () => {
         win.show();
-    })
-    win.loadURL('https://devdocs.io/');
+    });
+
+    win.loadURL(`file://${__dirname}/index.html`);
+
     win.on('closed', () => {
         win = null;
         app.quit();
