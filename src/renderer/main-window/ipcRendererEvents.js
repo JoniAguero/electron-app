@@ -32,6 +32,7 @@ function setIpc () {
 }
 
 function openPreferences () {
+  /* Proceso para crear una nueva ventana. 'remote' toma el BrowerWindow, y nos sirve para manejar multiples ventanas */
   const BrowserWindow = remote.BrowserWindow
   const mainWindow = remote.getGlobal('win')
 
