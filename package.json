@@ -19,6 +19,7 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "electron-compile": "^6.4.3",
-    "electron-debug": "^2.0.0"
+    "electron-debug": "^2.0.0",
+    "is-image": "^2.0.0"
   }
 }

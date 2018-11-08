@@ -2,6 +2,7 @@
 
 import { app, BrowserWindow } from 'electron';
 import devtools from './devtools';
+import setIpcMain from './src/ipcMainEvents'
 
 if (process.env.NODE_ENV === 'DEV') {
     devtools()
